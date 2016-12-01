@@ -1,0 +1,8 @@
+# get code for token
+curl "https://todoist.com/oauth/authorize" \
+    -d "client_id=c98429fc4e7a4d8bbb68e42608459fbc" \
+    -d "scope=data:read" \
+    -d "state=secretstring
+
+# get token from a code
+curl https://todoist.com/oauth/access_token -X POST -d "client_id=c98429fc4e7a4d8bbb68e42608459fbc" -d "client_secret=db46b403fb2240fab34f80cce5a4e900" -d "code=acdf2eaa2c668d4c80030c994a97052527b29255"
